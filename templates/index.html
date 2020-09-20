@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Palatio</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" id="fix">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#about">Palatio</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About <span class="sr-only">(current)</span></a></li>
+            <li><a href="#add-preferences-container">Preferences </a></li>
+            <li><a href="#upload-image-container">Image Upload </a></li>
+            <li><a href="#add-allergies-container">Allergies </a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron text-center">
+      <div class="container" id="about" style="padding-top: 20px;">
+        <p style="padding-top: 30px; padding-bottom: 30px; font-size: 500%; font-family:HelveticaNeue;">Welcome to <img src="./palatio1.png" style="max-width: 25%; height: auto;" alt="logo"> !!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis cupiditate dignissimos ex tempora sequi nostrum alias et atque! Vero doloribus, suscipit a ut facere cupiditate culpa sapiente dolorem voluptatem minima corrupti? Sequi similique dolore adipisci beatae, maxime consequatur ullam dicta, aliquam vitae repellat omnis deleniti quos nisi voluptatum. Cumque, nesciunt.</p>
+      </div>
+    </div>
+
+    <br>
+    <br>
+      
+    <div class="container">
+      <div class="container-fluid" style="border:1px solid #000000;" id="add-preferences-container">
+        <h1>Add Preferences</h1>
+        <div class="container col-md-6 col-sm-6 col-xs-6" id="likes">
+          <h3>Likes</h3>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+        <div class="container col-md-6 col-sm-6 col-xs-6" id="dislikes">
+          <h3>Dislikes</h3>
+          
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+
+      <div class="container" style="height: 100px;"></div>
+
+      <div class="container-fluid" style="border:1px solid #000000;" id="upload-image-container">
+        <h1>Upload Image</h1>
+        <br>
+        <input type="file">
+        <br>
+        <p class="help-block">Only .jpg allowed</p>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+
+      <div class="container" style="height: 100px;"></div>
+
+      <div class="container-fluid" style="border:1px solid #000000;" id="add-allergies-container">
+        <h1>Add Allergies</h1>
+        <div class="container col-md-9 col-sm-9 col-xs-9">
+          <textarea class="form-control" id="allergies" name="allergies" rows="4" cols="50">Enter Allergies</textarea>
+        </div>
+        <div class="container col-md-3 col-sm-3 col-xs-3"></div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+      
+      <div class="container" style="height: 300px;"></div>
+
+      <br><br>
+
+    </div>
+    
+    <footer class="footer">
+      <div class="footer" id="footer">
+        <h3>Palatio &copy; 2020</h3>
+        <span>Arnaav Anand | Aadya Saxena | Rashi Jhawar | Aayush Ashok | Pratyush Agarwal</span>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
